@@ -1,6 +1,6 @@
 import React from 'react';
-import './Card.css';
-import ImageContainer from '../ImageContainer';
+import './card.css';
+import ImageContainer from '../image-container';
 
 const likeIcon = <svg height="16" viewBox="0 0 16 14" width="18">
   <g fill="transparent">
@@ -11,16 +11,16 @@ const likeIcon = <svg height="16" viewBox="0 0 16 14" width="18">
 </svg>;
 const cardBgImage = image => ({ backgroundImage: `url(${image})`});
 
-const Header = props => <div class="header-image" style={cardBgImage(props.image)}/>;
+const Header = props => <div className="header-image" style={cardBgImage(props.image)}/>;
 
 const Body = props => (
-  <div class="body">
-    <div class="vendor-logo"><ImageContainer url={props.vendorImage}/></div>
+  <div className="body">
+    <div className="vendor-logo"><ImageContainer url={props.vendorImage}/></div>
 
-    <h4 class="card-header">{props.header}</h4>
+    <h4 className="card-header">{props.header}</h4>
 
-    <div class="actions">
-      <button class="btn like-btn">
+    <div className="actions">
+      <button className="btn like-btn">
         {likeIcon}
       </button>
     </div>

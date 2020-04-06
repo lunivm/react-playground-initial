@@ -14,5 +14,5 @@ const Div = styled.div`
 `;
 
 export default function ImageContainer (props) {
-  return <Div data-component="ImageContainer"><Image class="image" alt="" src={props.url}/></Div>;
+  return <Div data-component="ImageContainer"><Image className="image" alt="" src={props.url}/></Div>;
 }
