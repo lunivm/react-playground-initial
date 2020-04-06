@@ -1,6 +1,9 @@
 import React from 'react';
 import './card.css';
+import PropTypes from 'prop-types';
+
 import ImageContainer from '../image-container';
+
 
 const likeIcon = <svg height="16" viewBox="0 0 16 14" width="18">
   <g fill="transparent">
@@ -37,3 +40,9 @@ export default class Card extends React.Component {
     );
   }
 }
+
+Card.propTypes = {
+  image: PropTypes.string,
+  header: PropTypes.string,
+  vendorImage: PropTypes.string
+};
