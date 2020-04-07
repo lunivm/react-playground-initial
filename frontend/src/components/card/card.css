@@ -34,3 +34,8 @@
   border-radius: 5px;
   border: 1px solid rgba(53, 53, 53, 0.1);
 }
+
+.like-btn {
+  border: none;
+  color: var(--main-color);
+}
