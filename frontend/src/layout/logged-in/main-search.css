@@ -1,7 +1,7 @@
 .main-search-input {
   border: 1px solid #aaa;
   font-size: 1em;
-  padding: 1em;
+  padding: 8px 15px;
   width: 80%;
   max-width: 480px;
   display: block;
