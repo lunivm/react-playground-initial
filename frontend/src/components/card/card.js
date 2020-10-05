@@ -12,16 +12,14 @@ const likeIcon = <svg height='16' viewBox='0 0 16 14' width='18'>
       fill='currentColor' stroke='currentColor'></path>
   </g>
 </svg>;
-const cardBgImage = image => ({ backgroundImage: `url(${image})`});
 
-const Header = props => <div className='header-image' style={cardBgImage(props.image)}/>;
+const Header = props => <div className='header-image' style={{ backgroundImage: `url(${props.image})`}}/>;
 
 const Body = props => (
   <div className='body'>
     <div className='vendor-logo'><ImageContainer url={props.vendorImage}/></div>
 
     <h4 className='card-header'>{props.header}</h4>
-
     <div className='actions'>
       <button className='like-btn'>
         {likeIcon}
