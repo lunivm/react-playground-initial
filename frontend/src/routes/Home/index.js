@@ -1,8 +1,8 @@
 import React from 'react';
-import { getAllFeatures } from './featured.service';
-import FeaturedSection from './featured-section';
+import { getAllFeatures } from './featuredAPI';
+import FeaturedSection from './FeaturedSection';
 
-export default class HomePage extends React.Component {
+export default class Home extends React.Component {
   constructor(props) {
     super(props);
 

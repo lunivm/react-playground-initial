@@ -1,8 +1,8 @@
 import React from 'react';
-import './card.css';
+import './Card.css';
 import PropTypes from 'prop-types';
 
-import ImageContainer from '../image-container';
+import ImageContainer from './ImageContainer';
 
 
 const likeIcon = <svg height='16' viewBox='0 0 16 14' width='18'>

@@ -1,6 +1,6 @@
 import React from 'react';
-import './featured-section.css';
-import Card from '../../components/card/card';
+import './FeaturedSection.css';
+import Card from '../../components/Card';
 
 export default function FeaturedSection(props) {
   return (

@@ -1,8 +1,8 @@
 const express = require('express');
-const router = express.Router();
+const featuredRouter = express.Router();
 const faker = require('faker');
 
-router.get('/featured', function(req, res) {
+featuredRouter.get('/', function(req, res) {
   const items = new Array(12).fill({}).map(() => ({
     id: faker.random.uuid(),
     image: faker.image.image(),
@@ -17,4 +17,4 @@ router.get('/featured', function(req, res) {
   res.send(resp);
 });
 
-module.exports = router;
+module.exports = featuredRouter;

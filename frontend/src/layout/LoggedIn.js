@@ -1,16 +1,20 @@
 import React from 'react';
-import './logged-in.layout.css';
+import './LoggedIn.css';
 
-import Navigation from './navigation';
-import MainSearch from './main-search';
+import Navigation from '../components/Navigation';
+import MainSearch from '../components/MainSearch';
 
 export default function LoggedIn(props) {
   return (
     <div>
       <header className='logged-in-header'>
         <div className='top-header-line'/>
+
         <Navigation/>
-        <MainSearch/>
+
+        <div className='main-search-section'>
+          <MainSearch/>
+        </div>
       </header>
 
       <main>

@@ -1,5 +1,5 @@
 import React from 'react';
-import './navigation.css';
+import './Navigation.css';
 
 import { Link } from 'react-router-dom';
 
@@ -14,6 +14,9 @@ export default function Navigation() {
             </li>
             <li>
               <Link to="/search">Search</Link>
+            </li>
+            <li>
+              <Link to="/todos">TODOs</Link>
             </li>
           </ul>
         </nav>

@@ -38,4 +38,7 @@
 .like-btn {
   border: none;
   color: var(--main-color);
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
 }
